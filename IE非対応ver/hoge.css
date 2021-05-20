@@ -1,0 +1,32 @@
+.card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 20px 40px;
+    padding: 20px;
+    height: 100px;
+    width: calc(100% - 120px);
+    max-width: 500px;
+  }
+  
+  /* fallback for IE */
+  .text {
+    display: block;
+    overflow: hidden;
+    line-height: 16px;
+    height: 32px; /* 16px * 2 lines */
+  }
+  
+  @supports (-webkit-line-clamp: 2) {
+    .ellipsis {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+    }
+  }
+
+  td {
+      max-width: 50px;
+  } 
+  
